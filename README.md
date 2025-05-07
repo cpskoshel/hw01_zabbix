@@ -5,6 +5,7 @@
 1. Страница входа в Zabbix 
 ![alt text](image.png)
 2. Команды:
+   
     //Установка БД
         apt install postgresql
     //Zabbix

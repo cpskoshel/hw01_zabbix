@@ -5,9 +5,11 @@
 1. Страница входа в Zabbix 
 ![alt text](image.png)
 2. Команды:
-   
+    ```
     //Установка БД
         apt install postgresql
+    ```
+    ```
     //Zabbix
         wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_6.0+debian12_all.deb
         dpkg -i zabbix-release_latest_6.0+debian12_all.deb
@@ -22,25 +24,31 @@
 
         systemctl restart zabbix-server zabbix-agent apache2
         systemctl enable zabbix-server zabbix-agent apache2
+    ```
 
 ### Задание 2
 
 1. Hosts
 ![alt text](image-1.png)
-2.![alt text](image-5.png) 
+2.
+![alt text](image-5.png) 
 ![alt text](image-6.png)
 ![alt text](image-2.png)
-3. ![alt text](image-3.png)
+3. 
+![alt text](image-3.png)
 ![alt text](image-4.png)
-4. Установка агента
+4.
+``` 
+//Установка агента
     sudo apt-get install zabbix-agent
     /etc/zabbix/zabbix_agentd.conf // указать IP zabbix Server=
     sudo systemctl restart zabbix-agent
     sudo systemctl status zabbix-agent
-    Добавляем hosts     
-
+//Добавляем hosts     
+```
 
 ### Задание 3
 
-1. ![alt text](image-8.png)
+1. 
+![alt text](image-8.png)
 ![alt text](image-7.png)
